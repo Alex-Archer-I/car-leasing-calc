@@ -1,0 +1,50 @@
+.section-forms {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.section-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    align-items: center;
+}
+
+.display-number {
+    font-family: 'Nekst', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 90%;
+    color: #333;
+}
+
+@media (max-width: 1120px) {
+    .display-number {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-forms {
+        display: block;
+    }
+
+    .section-display {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-display {
+        display: block;
+    }
+
+    .display-number {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,47 @@
+.form {
+    height: 7.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nekst', sans-serif;
+    background-color: #f3f3f4;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    height: 4rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-currency {
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: #575757;
+}
+
+.active {
+    background-color: #fff;
+    border: 2px solid #f3f3f4;
+}
+
+@media (max-width: 768px) {
+    .form {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-currency {
+        font-size: 1.2rem;
+    }
+}

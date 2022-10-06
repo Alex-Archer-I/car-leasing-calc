@@ -1,0 +1,51 @@
+.number-input {
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: #575757;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+.number-input:focus {
+    outline: transparent;
+}
+
+.number-input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.number-input-percent {
+    height: 3.1rem;
+    width: 4rem;
+    background-color: #ebebec;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #575757;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+}
+
+.number-input-percent:focus {
+    outline: transparent;
+}
+
+.number-input-percent::-webkit-inner-spin-button {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .number-input {
+        font-size: 1.2rem;
+    }
+}

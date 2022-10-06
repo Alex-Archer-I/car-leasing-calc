@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Provider} from 'react-redux';
 
-function App() {
+import FormsField from './components/forms/forms-field';
+import DisplayField from './components/display/display-field';
+
+import store from './store/store';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <h1>Рассчитайте стоимость автомобиля в лизинг</h1>
+      <FormsField/>
+      <DisplayField/>
+    </Provider>
   );
-}
+};
 
 export default App;
